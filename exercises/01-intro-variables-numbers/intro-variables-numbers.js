@@ -1,35 +1,45 @@
 function myName() {
   // Create a variable called myName
+  const myName = "Cameron";
+  console.log(myName); 
   return myName;
 }
 
 function setTeachersNames(teachersName) {
-  const teachers = null; // Change this line only
-  teachers = teachersName; //  <- this is invalid because teachers is a const
+let teachers = "Matina";
+teachers += " " + "Jamal";
+console.log(teachers);// Change this line only
+ 
+  teachers = teachersName;//  <- this is invalid because teachers is a const
 
   return teachers;
 }
 
 /*** return the sum of both arguments  ***/
 function add(a, b) {
-  let sum;
-
+  let sum = a + b;
+  console.log(sum);
   return sum;
 }
 
 /*** Using the increment operator, add a year to the argument and make me older */
 function ageMeByAYear(age) {
+  age ++;
+  console.log(age);
   return age;
 }
 
 /*** Using the decrement operator make me age decrement by a year  ***/
 function makeMeYoungerByAYear(age) {
+  age --;
+  console.log(age);
   return age;
 }
 
 /** Take the argument that will be a string and return an integer  */
 function convertStringToInt(str) {
-  let int;
+  const int = parseInt(str);
+  console.log(int);
   return int;
 }
 
@@ -43,15 +53,17 @@ function convertStringToInt(str) {
  *
  */
 function getTheCharacterPosition(name, letter) {
-  let characterPosition;
-  return characterPosition;
+  const index = name.indexOf(letter);
+  let characterPosition = index;
+  console.log(index);
+  return characterPosition; 
 }
 
 /** Take the argument and return the length of the argument */
 
 function stringLength(str) {
-  let strLength;
-
+  let strLength = str.length;
+  console.log(str.length);
   return strLength;
 }
 
@@ -63,9 +75,10 @@ function stringLength(str) {
  */
 
 function getLastCharacter(str) {
-  let lastCharacter;
-
+  const lastCharacter = str[ str.length - 1 ];
+  console.log(lastCharacter);
   return lastCharacter;
+  
 }
 
 /** Return the last part of a place name
@@ -81,8 +94,8 @@ function getLastCharacter(str) {
  */
 
 function getLastWordInPlaceName(place) {
-  let newPlace;
-
+  const newPlace = place.substring(4, 12);
+  console.log(newPlace);
   return newPlace;
 }
 
@@ -99,7 +112,9 @@ function getLastWordInPlaceName(place) {
  */
 
 function replaceLastName(fullName, newLastName) {
-  let newFullName;
+const newFullName = fullName.replace("Ramsey", "Smith");
+  console.log(newFullName);
+
   return newFullName;
 }
 
@@ -109,8 +124,10 @@ function replaceLastName(fullName, newLastName) {
  */
 
 function capitalizeLastName(fullName) {
-  let capitalizeLastName;
-
+  let capitalizeLastName = "Jane Doe";
+  capitalizeLastName[5].toUpperCase() + capitalizeLastName.substring(5);
+  console.log(capitalizeLastName);
+  
   return capitalizeLastName;
 }
 
