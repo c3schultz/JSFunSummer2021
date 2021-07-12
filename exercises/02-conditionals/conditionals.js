@@ -6,11 +6,17 @@
  * ```
  */
 function compareEquality(a, b) {
-  if (a == b) {
+  //a = 5, b = 5
+  if (a === b) {
+    console.log("Equal");
     return "Equal";
   }
-  return "Not Equal";
+   else if (a !== b);
+    console.log("Not Equal");  
+    return "Not Equal";
 }
+
+
 
 /** The function should use the strict inequality operator
  *   3 !== 3; // false
@@ -26,7 +32,7 @@ function compareEquality(a, b) {
 
 function testStrictNotEqual(a, b) {
   // Only Change Code Below this Line
-  if (undefined) {
+  if (a !== b) {
     // Only Change Code Above this Line
 
     return "Not Equal";
@@ -40,8 +46,18 @@ function testStrictNotEqual(a, b) {
  * Use the logical && operator
  */
 function isTeenager(age) {
-  return; // Return something here
+  if (age >= 13 && age < 20) {
+    console.log("true");
+    return isTeenager;
+  }
+  else if (age <= 13 && age >= 20); {
+    console.log("false");
+    return age;
+  } 
 }
+  // Return something here
+  
+
 
 /**
  * "stringOrNumber" should be true if stringOrNumber is:
@@ -51,23 +67,42 @@ function isTeenager(age) {
  * Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
  */
 function isNumeric(stringOrNumber) {
-  return; // Return something here
-}
+  const isNumber = true;
+  const isString = false;
+  const isStringNumOnly = true;
+  
+    if (isNumber || isString || isStringNumOnly) {
+    console.log("true"); 
+    return stringOrNumber; 
+  }
+  }
+  
+   // Return something here
+
 
 /***
  *  Using conditional logic compare both arguments and return the largest argument
  */
 
 function getLargerNumber(arg1, arg2) {
-  let largestNumber;
+  // console.log(arg1);
+  // console.log(arg2);
+  let largestNumber = arg2;
+  let smallestNumber = arg1;
 
+  if (arg1 <= arg2) {
+    console.log(largestNumber);
+  }
   return largestNumber;
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-  return; // return something here
+  console.log(isEven);
+  
+  return (isEven); 
+ // return something here
 }
 
 /****
@@ -87,7 +122,17 @@ function isEvenOrOdd(isEven) {
  * 
  *  *****/
 
-function caseInSwitch(num) {}
+function caseInSwitch(num) {
+  console.log(num);
+  let newNumber = "";
+  newNumber = "ONE";
+    if (num == newNumber) {
+      console.log(num.toString(num));  
+    }
+   return num; 
+  }
+  
+
 
 export {
   isEvenOrOdd,
