@@ -127,7 +127,7 @@ function caseInSwitch(num) {
   let newNumber = "";
   newNumber = "ONE";
     if (num == newNumber) {
-      console.log(num.toString(num));  
+      console.log(num.toString(1));  
     }
    return num; 
   }
