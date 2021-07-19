@@ -31,7 +31,7 @@ describe("exercises/exercises/04-arrays-sets/arrays-sets.js", () => {
       expect(combinedArray).to.deep.equal(["HTML", "CSS"]);
     });
     it("should should two arrays by using the spread operator", () => {
-      expect(findAndAbort.toString().includes("...")).to.equal(true);
+      expect(combineArray.toString().includes("...")).to.equal(true);
     });
   });
 
