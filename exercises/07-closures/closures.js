@@ -17,7 +17,7 @@
 const greeter = () => {
   const greet = {
     hello:(name) =>{
-      return "Hello "+ name +"!";
+      return "Hello " + name +"!";
     }
   };
   return greet;
