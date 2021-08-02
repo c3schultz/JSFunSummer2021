@@ -14,7 +14,15 @@
  *
  * (This is technically not a closure. It is here to prepare you for the next problems.)
  */
-const greeter = () => {};
+const greeter = () => {
+  const greet = {
+    hello:(name) =>{
+      return "Hello "+ name +"!";
+    }
+  };
+  return greet;
+};
+
 
 /**
  * Use closures to complete this exercise.
