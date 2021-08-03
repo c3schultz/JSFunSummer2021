@@ -1,7 +1,7 @@
 import { expect } from "chai";
 const sinon = "sinon";
 
-import * as functions from "../../exercises/09-callbacks/callbacks.js";
+import functions from "../../exercises/09-callbacks/callbacks.js";
 const { calculate, printer, printNames, findFirst } = functions;
 
 describe("exercises/09-callbacks/09-callbacks.js", () => {
