@@ -13,6 +13,12 @@
  * @param {number} a
  * @param {number} b
  */
-const multiplier = (a, b) => {};
+const multiplier = (a, b) => {
+  if (a && b) {
+    return a * b;
+  } else {
+    return (b) => a * b;
+  }
+};
 
 export { multiplier };
