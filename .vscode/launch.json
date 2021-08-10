@@ -160,5 +160,18 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "BONUS high-order-functions",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/bonus-high-order-functions/high-order-functions.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
   ]
 }
