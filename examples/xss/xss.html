@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My title</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.3/purify.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div class="container mt-2 mb-2">
+      <h1>Please read the README.md</h1>
+      <div class="row">
+        <form class="col col-xs-12 col-md-4">
+          <label for="text">Enter Text</label>
+          <input id="text" name="text" type="text" class="form-control mb-2" />
+          <div>
+            <span class="mr-2">Display Text</span>
+            <button id="client-side" class="btn btn-primary" type="button">
+              Client
+            </button>
+            <button class="btn btn-secondary">Server</button>
+          </div>
+        </form>
+        <div class="col col-xs-12 col-md-4">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            class="form-control mb-2"
+            value="pass1234"
+          />
+          <div>
+            <button id="capture-password" class="btn btn-secondary">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <blockquote id="output" class="blockquote mt-4 mb-4">{output}</blockquote>
+    </div>
+
+    <script>
+      !(function () {
+        const text = document.querySelector("#text");
+        const output = document.querySelector("#output");
+        document.querySelector("#client-side").addEventListener("click", () => {
+          output.innerHTML = text.value;
+        });
+      })();
+    </script>
+  </body>
+</html>
